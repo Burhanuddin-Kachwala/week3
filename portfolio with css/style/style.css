@@ -559,6 +559,8 @@ marquee {
     color: white;
 }
 
+/* Week 3 :Below is the css for toggle menu and validation */
+
 #nameError , #emailError , #messageError{
     display: block;
     color: red;
