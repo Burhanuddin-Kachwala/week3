@@ -1,0 +1,203 @@
+
+
+<!-- This is for Week 3 
+Added Validation to Form
+Made responsive navbar with toggle button for phone screens -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Burhanuddin's website</title>
+    <link rel="stylesheet" href="./style/style.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <header >
+        <section>
+            <!-- <img src="logo.png" alt="logo" class="logo"> -->
+            <span class="head_name"> Burhanuddin Kachwala</span>
+        </section>  
+    
+    <nav class="navbar">
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>  
+            <li><a href="#contact_us">Contact</a></li> 
+                
+                
+        </ul> 
+        
+                 
+    </nav>
+
+    <!-- This is the side bar that appears only on phone screens  | The JS file is Available in script/script.js-->
+    <ul class="side-nav-links">
+        <i onclick="sideBarClose()" class="fas fa-2x fa-times" id="close"></i>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>  
+        <li><a href="#contact_us">Contact</a></li> 
+        
+    </ul> 
+    <i onclick="sideBarOpen()"class="fas fa-bars" id="menu" ></i>
+</header>
+<section id="home">
+    
+    <div class="home_div">
+       <h2 class="home_name_main">Burhanuddin Kachwala</h2>
+    <i  id="home_content">From Concepts to Creations – I Make It Happen.</i>
+    <button class="home_btn" title="View Resume"><a href="Burhanuddin Kachwala PHP Developer resume.pdf" target="_blank" download="Burhanuddin Kachwala.pdf">Resume</a> </button>
+    </div>
+    
+
+    
+</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <hr>
+        <div class="flex-container">
+            <p class="flex-item" id="flex-item-para">Hello! I'm Burhanuddin Kachwala, a passionate and detail-oriented software developer with a strong foundation in PHP and Bootstrap. With hands-on experience in building dynamic and user-friendly web applications, I enjoy turning creative ideas into functional, scalable solutions. My recent projects include a car rental system, where I focused on delivering a seamless user experience. Beyond coding, I’m constantly exploring new technologies and thrive in collaborative environments that challenge me to grow. When I'm not debugging or building projects, Beyond coding, I’m constantly exploring new technologies and pushing my limits to stay ahead in the ever-evolving tech landscape.You might find me engaging with people or exploring innovative ways to solve problems. Welcome to my portfolio—let's create something amazing together!               
+            </p>
+            
+           <div class="flex-item" id="profile">
+            <img src="./image/profile.JPG" alt="profile" id="profile" class="profile_img">
+           </div>
+           
+        </div>
+       
+    </section>
+
+    <section id="skills">
+
+        <h2>Skills</h2>
+        <hr>
+        <div class="skills-container">
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <progress class="skill-progress" max="100" value="80" style="width: 80%;"></progress>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <progress class="skill-progress" max="100" value="55" style="width: 55%;"></progress>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JS</span>
+                <progress class="skill-progress" max="100" value="65" style="width: 65%;"></progress>
+            </div>
+            <div class="skill">
+                <span class="skill-name">PHP</span>
+                <progress class="skill-progress" max="100" value="75" style="width: 75%;"></progress>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Bootstrap</span>
+                <progress class="skill-progress" max="100" value="80" style="width: 80%;"></progress>
+            </div>
+        </div>
+    </section>
+
+    <section id="project">
+        <h2>My Projects</h2>
+        <hr>
+        <table class="project-table">
+            
+            <thead class="project-table-head">
+                <tr class="project-table-head-row">
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Technologies Used</th>
+                </tr>
+            </thead>
+            <tbody class="project-table-body">
+                <tr>
+                    <td><a href="https://github.com/Burhanuddin-Kachwala/week1" class="project-name">Rental System</a></td>
+                    <td class="project-description">A web application that allows users to rent cars online. It includes features such as user registration, car selection, booking, and payment processing.</td>
+                    <td class="project-technologies">PHP, MySQL, HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/Burhanuddin-Kachwala/week1" class="project-name">Portfolio Website</a></td>
+                    <td class="project-description">My personal portfolio website showcasing my projects, skills, and experience. It is designed to be responsive and user-friendly.</td>
+                    <td class="project-technologies">React, HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td><a href="https://github.com/Burhanuddin-Kachwala/week1" class="project-name">E-commerce Platform</a></td>
+                    <td class="project-description">An online shopping platform with product listings, user accounts, cart management, and payment integration. It provides a seamless shopping experience for customers.</td>
+                    <td class="project-technologies">Node.js, Express, MongoDB, React, HTML, CSS</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact_us" class="contact-section">
+        <h2>Contact Me</h2>
+        <hr>
+        <div class="contact_us_div">
+            <div class="contact-header">    
+                <h2 class="contact-header-name" id="contact-header-name1">Get In Touch</h2>        
+                
+                <p>Tell Me About Your Project</p>
+            </div>
+            <div class="contact-subheader">
+                <h2 class="contact-header-name">Send a Message</h2>        
+                <form class="contact-form" onsubmit="return validateForm()">
+                    <input type="text" class="contact-input" placeholder="First-Name Last-Name" id="name"><br>
+                    <span id="nameError"></span>
+                    <input type="email" class="contact-input" placeholder="abc@xyz.com" id="email"><br>
+                    <span id="emailError"></span>
+                    <textarea class="contact-textarea" placeholder="Message" id="message"></textarea><br>
+                    <span id="messageError"></span>
+                    <input type="submit" class="contact-submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        
+      
+       
+    </section>
+  
+        <footer>
+            <section>
+                <div>
+                    
+                    <span>
+                        
+                        <a href="https://www.linkedin.com/in/burhanuddin-kachwala-b98230102/" target="_blank">
+                            <i class="fab fa-linkedin fa-2x icons"></i>
+                        </a>
+                        </span>
+                        <span>
+                        <a href="https://www.instagram.com/burhan_kachwala_/">
+                            <i class="fab fa-instagram fa-2x icons"></i>
+                        </a>
+                        </span>
+                        <span>
+                        <a href="mailto:kachburhan@gmail.com">
+                            <i class="fab fa-solid fa-envelope fa-2x icons"></i>
+                        </a>
+                    
+                </span>
+                
+            
+                </div>
+                <marquee scrollamount="10" scrolldelay="100" style="display: block;">&copy; 2025 Burhanuddin Kachwala | All Rights Reserved </marquee>
+                
+            </section>
+        
+        </footer>
+        <a href="https://wa.me/+918155870807" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+   <script src="./script/script.js"></script>
+</body>
+
+</html>
